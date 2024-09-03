@@ -1,0 +1,100 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Avenir';
+    background-color: antiquewhite;
+}
+
+.red-span {
+    color: red;
+}
+
+.header {
+    background-color: black;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+
+    &__title {
+        color: white;
+        font-size: 4rem;
+    }
+
+    &__subtitle {
+        color: white;
+        font-size: 1rem;
+        font-weight: 200;
+    }
+}
+
+.team {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+
+    &__card {
+        width: 14vw;
+        height: 40vh;
+        background-color: #FFd6d7;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+        &-img {
+            background-size: cover;
+            width: 13vw;
+            mix-blend-mode: multiply;
+
+            &:hover {
+                animation: spin 2s infinite;
+            }
+        }
+    } 
+
+    &__name {
+        font-size: 1.25rem;
+    }
+}
+
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+.pokemon {
+    padding: 2rem;
+
+    &__title {
+        font-size: 3rem;
+    }
+}
+
+.versus {
+    &__title {
+        text-align: center;
+    }
+}
+
+.footer {
+    padding: 2rem;
+
+    &__title {
+        
+    }
+}
